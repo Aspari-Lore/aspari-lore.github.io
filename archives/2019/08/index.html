@@ -59,8 +59,8 @@
   </h4>
   <div class="sidebar-content">
     <ul>
-<li><a href="/2019/08/12/hello-world">主页</a>  <ul>
-<li><a href="/2019/08/13/my-love">my love</a></li>
+<li><a href="/2019/08/14/home">主页</a>  <ul>
+<li><a href="/2019/08/13/my-love">你好</a></li>
 </ul>
 </li>
 </ul>
@@ -90,7 +90,14 @@
           
               <li>
                 <span>2019-08-14</span>
-                <a href="/2019/08/14/menu/">
+                <a href="/2019/08/14/home/">
+                  Hello World
+                </a>
+              </li>
+          
+              <li>
+                <span>2019-08-14</span>
+                <a href="/2019/08/14/sidebar_nav/">
                   Untitled
                 </a>
               </li>
@@ -98,14 +105,7 @@
               <li>
                 <span>2019-08-13</span>
                 <a href="/2019/08/13/my-love/">
-                  my love
-                </a>
-              </li>
-          
-              <li>
-                <span>2019-08-12</span>
-                <a href="/2019/08/12/hello-world/">
-                  Hello World
+                  你好
                 </a>
               </li>
           
@@ -123,9 +123,9 @@
   <div class="book-tocbot">
   </div>
   <div class="book-tocbot-menu">
-    <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
-    <a onclick="go_top()">Back to top</a>
-    <a onclick="go_bottom()">Go to bottom</a>
+    <a class="book-toc-expand" onclick="expand_toc()">> 展开</a>
+    <a onclick="go_top()">返回顶部</a>
+    <a onclick="go_bottom()">前往底部</a>
   </div>
 </div>
 
@@ -150,7 +150,7 @@ function expand_toc(){
     scrollSmooth: false,
   });
   b.setAttribute("onclick", "collapse_toc()");
-  b.innerHTML = "Collapse all"
+  b.innerHTML = "^ 收起"
 }
 
 function collapse_toc(){
@@ -164,7 +164,7 @@ function collapse_toc(){
     scrollSmooth: false,
   });
   b.setAttribute("onclick", "expand_toc()");
-  b.innerHTML = "Expand all"
+  b.innerHTML = "> 展开"
 }
 
 function go_top() {

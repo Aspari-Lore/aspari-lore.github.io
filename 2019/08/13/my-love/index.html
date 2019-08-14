@@ -11,7 +11,7 @@
 
     <title>
         
-          my love - Lore Complex
+          你好 - Lore Complex
         
     </title>
 
@@ -59,8 +59,8 @@
   </h4>
   <div class="sidebar-content">
     <ul>
-<li><a href="/2019/08/12/hello-world">主页</a>  <ul>
-<li><a href="/2019/08/13/my-love">my love</a></li>
+<li><a href="/2019/08/14/home">主页</a>  <ul>
+<li><a href="/2019/08/13/my-love">你好</a></li>
 </ul>
 </li>
 </ul>
@@ -92,8 +92,8 @@
   <input type="checkbox" id="accordion-sidebar" name="accordion-checkbox" hidden>
   <div class="accordion-body">
     <ul>
-<li><a href="/2019/08/12/hello-world">主页</a>  <ul>
-<li><a href="/2019/08/13/my-love">my love</a></li>
+<li><a href="/2019/08/14/home">主页</a>  <ul>
+<li><a href="/2019/08/13/my-love">你好</a></li>
 </ul>
 </li>
 </ul>
@@ -103,16 +103,7 @@
 </div>
 
 <div class="book-post">
-  <h1 id="my-love"><a href="#my-love" class="headerlink" title="my love"></a>my love</h1><p>my love<br><strong>my love</strong>  </p>
-<pre><code>love love my love  
-the longest journey</code></pre><ol>
-<li>the pure decision</li>
-<li>ok</li>
-<li>forth</li>
-</ol>
-<hr>
-<p><code>ctrl+a</code></p>
-
+  <h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1>
 </div>
 
 
@@ -132,9 +123,9 @@ the longest journey</code></pre><ol>
   <div class="book-tocbot">
   </div>
   <div class="book-tocbot-menu">
-    <a class="book-toc-expand" onclick="expand_toc()">Expand all</a>
-    <a onclick="go_top()">Back to top</a>
-    <a onclick="go_bottom()">Go to bottom</a>
+    <a class="book-toc-expand" onclick="expand_toc()">> 展开</a>
+    <a onclick="go_top()">返回顶部</a>
+    <a onclick="go_bottom()">前往底部</a>
   </div>
 </div>
 
@@ -159,7 +150,7 @@ function expand_toc(){
     scrollSmooth: false,
   });
   b.setAttribute("onclick", "collapse_toc()");
-  b.innerHTML = "Collapse all"
+  b.innerHTML = "^ 收起"
 }
 
 function collapse_toc(){
@@ -173,7 +164,7 @@ function collapse_toc(){
     scrollSmooth: false,
   });
   b.setAttribute("onclick", "expand_toc()");
-  b.innerHTML = "Expand all"
+  b.innerHTML = "> 展开"
 }
 
 function go_top() {
